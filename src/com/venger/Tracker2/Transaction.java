@@ -1,10 +1,11 @@
-
+package com.venger.Tracker2;
 
 public class Transaction {
     public enum Type{
         INCOME,
         EXPENSE
     }
+
     private double amount;
     private Type type;
     private String description;
@@ -29,10 +30,10 @@ public class Transaction {
 
     @Override
     public String toString() {
-        return "Transaction{" +
+        return "com.venger.Tracker2.Transaction{" +
                 "Сума: " +
                 "" + amount +
-                ", Тип: " + (type == Type.INCOME ? "Дохід" : "Витрата") +
+                ", Тип: " + (type ==  Type.INCOME ? "Дохід" : "Витрата") +
                 ", Опис: " + description + '\'' +
                 '}';
     }
